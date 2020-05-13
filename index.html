@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>南航托运行李计算器</title>
+    <link rel="stylesheet" href="layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="css/index.css" media="all">
+</head>
+
+<body>
+    <form class="layui-form layui-form-pane" action="">
+
+        <div id="header">托运行李计算器</div>
+
+        <div id="ticketDetail">
+            <div class="layui-form-item">
+                <label class="layui-form-label">航线类型</label>
+                <div class="layui-input-block">
+                    <select name="flightType" id="flightType" lay-filter="test">
+                        <option value="国内航线">国内航线</option>
+                        <option value="国际、地区航线">国际、地区航线</option>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item" id="flightArea">
+                <label class="layui-form-label">航线区域</label>
+                <div class="layui-input-block">
+                    <select name="flightArea" lay-verify="required">
+                        <option value="0" id="flightAreaOptionDefault">请选择</option>
+                        <option value="1">区域一</option>
+                        <option value="2">区域二</option>
+                        <option value="3">区域三</option>
+                        <option value="4">区域四</option>
+                        <option value="5">区域五</option>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">机舱类型</label>
+                <div class="layui-input-block">
+                    <select name="seatType" lay-verify="required">
+                        <option value="">请选择</option>
+                        <optgroup label="国内航线" id="inland">
+                            <option value="头等舱">头等舱</option>
+                            <option value="公务舱">公务舱</option>
+                            <option value="经济舱">经济舱</option>>
+                        </optgroup>
+                        <optgroup label="国际、地区航线" id="outland">
+                            <option value="头等、公务舱">头等、公务舱</option>
+                            <option value="悦享经济舱、超级经济舱">悦享经济舱、超级经济舱</option>
+                            <option value="经济舱（区域A）">经济舱（区域A）</option>
+                            <option value="经济舱（区域B）">经济舱（区域B）</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">乘客类型</label>
+                <div class="layui-input-block">
+                    <select name="peopleType" lay-verify="required">
+                        <option value=""></option>
+                        <option value="成人">成人票</option>
+                        <option value="儿童">儿童票</option>
+                        <option value="婴儿">婴儿票</option>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item" id="vipType">
+                <label class="layui-form-label">VIP类型</label>
+                <div class="layui-input-block">
+                    <select name="vipType">
+                        <option value="无">无</option>
+                        <option value="凤凰知音白金卡">凤凰知音白金卡</option>
+                        <option value="凤凰知音金卡、银卡">凤凰知音金卡、银卡</option>
+                        <option value="星空联盟金卡">星空联盟金卡</option>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">票价</label>
+                <div class="layui-input-block">
+                    <input type="text" name="ticketPrice" autocomplete="off" lay-verify="required|number|positive"
+                        placeholder="单位：人民币" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-inline" id="calculateBtn" style="width: fit-content;">
+                    <button class="layui-btn" lay-submit="" lay-filter="calculate">&nbsp;&nbsp;计算&nbsp;&nbsp;</button>
+                </div>
+                <div class="layui-input-inline" id="isDisability" style="width: fit-content;">
+                    <input type="checkbox" name="isDisability" lay-skin="primary" title="是否残疾、伤、病" />
+                </div>
+            </div>
+        </div>
+
+        <div id="baggageDetail">
+            <input type="text" id="baggageSum" name="baggageSum" value="0" style="display: none;">
+            <table id="baggageTable" class="layui-table">
+                <colgroup>
+                    <col width="19%">
+                    <col width="19%">
+                    <col width="19%">
+                    <col width="19%">
+                    <col width="22%">
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th class="align-center">行李类型</th>
+                        <th class="align-center">长（厘米）</th>
+                        <th class="align-center">宽（厘米）</th>
+                        <th class="align-center">高（厘米）</th>
+                        <th class="align-center">重量（千克）</th>
+                        <th>
+                            <button type="button" class="layui-btn layui-btn-xs" id="addBtn">
+                                <i class="layui-icon">&#xe608;</i>
+                            </button>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="baggageRow" style="display: none;">
+                        <td style="padding: 9px 5px">
+                            <div class="layui-input-inline">
+                                <select id="baggageType00" name="baggageType00" lay-filter="baggageType">
+                                    <option value="普通行李">普通行李</option>
+                                    <option value="手动轮椅">手动轮椅</option>
+                                    <option value="电动轮椅">电动轮椅</option>
+                                    <option value="婴儿车或摇篮">婴儿车或摇篮</option>
+                                    <option value="导盲犬">导盲犬</option>
+                                    <option value="骨灰">骨灰</option>
+                                    <option value="自行车">自行车</option>
+                                    <option value="皮划艇">皮划艇</option>
+                                    <option value="撑杆">撑杆</option>
+                                    <option value="睡袋">睡袋</option>
+                                    <option value="小型电器或仪器">小型电器或仪器</option>
+                                    <option value="可作为行李运输的枪支">可作为行李运输的枪支</option>
+                                    <option value="可作为行李运输的子弹">可作为行李运输的子弹</option>
+                                    <option value="小动物">小动物</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td style="padding: 9px 5px">
+                            <div class="layui-input-inline">
+                                <input type="text" id="length00" name="length00" lay-verify="required|number|positive"
+                                    autocomplete="off" class="layui-input" value="0">
+                            </div>
+                        </td>
+                        <td style="padding: 9px 5px">
+                            <div class="layui-input-inline">
+                                <input type="text" id="width00" name="width00" lay-verify="required|number|positive"
+                                    autocomplete="off" class="layui-input" value="0">
+                            </div>
+                        </td>
+                        <td style="padding: 9px 5px">
+                            <div class="layui-input-inline">
+                                <input type="text" id="height00" name="height00" lay-verify="required|number|positive"
+                                    autocomplete="off" class="layui-input" value="0">
+                            </div>
+                        </td>
+                        <td style="padding: 9px 5px">
+                            <div class="layui-input-inline">
+                                <input type="text" id="weight00" name="weight00" lay-verify="required|number|positive"
+                                    autocomplete="off" class="layui-input" value="0">
+                            </div>
+                        </td>
+                        <td class="align-center">
+                            <button type="button" class="layui-btn layui-btn-danger layui-btn-xs"
+                                onclick="baggageRemove(this)">
+                                <i class="layui-icon">&#x1006;</i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="footer">
+            <div class="layui-card">
+                <div class="layui-card-header">注解</div>
+                <div class="layui-card-body">
+                    区域一：<span>美洲（除美国/加拿大外）/加勒比海地区 => 欧洲/非洲/中东/亚洲/西南太平洋</span><br>
+                    区域二：<span>欧洲/中东 => 非洲/亚洲/西南太平洋</span> |
+                    <span>日本 => 西南太平洋</span> |
+                    <span>日本/西南太平洋 => 亚洲（不含日本及西南太平洋）/非洲</span><br>
+                    区域三：<span>加拿大 => 美洲（除美国/加拿大外）/加勒比海地区/欧洲/非洲/中东/亚洲/西南太平洋</span><br>
+                    区域四：<span>美国（含夏威夷） => 美洲（除美国外）/加勒比海地区/欧洲/非洲/中东/亚洲/西南太平洋</span><br>
+                    区域五：<span>非洲 => 亚洲（除日本外)之间航线</span> |
+                    <span>欧洲 => 中东之间航线</span> |
+                    <span>亚洲（除日本)内航线</span> |
+                    <span>美洲（除美国/加拿大）及加勒比海地区内航线</span> |
+                    <span>上述未列明的航线</span>
+                </div>
+            </div>
+        </div>
+
+    </form>
+    <script src="layui/layui.js" charset="utf-8"></script>
+    <script src="js/index.js" charset="utf-8"></script>
+    <script src="js/calculate.js" charset="utf-8"></script>
+    <script>
+
+        // 页面加载完毕后执行此函数
+        window.onload = function () {
+            selectInland();
+        }
+
+        // 动态删除行李信息
+        function baggageRemove(obj) {
+            // 获得删除行的索引
+            let rowIndex = obj.parentNode.parentNode.rowIndex;
+            document.getElementById('baggageTable').deleteRow(rowIndex);
+            let count = document.getElementById('baggageSum').value;
+            document.getElementById('baggageSum').value = --count;
+        }
+
+        layui.use(['form'], function () {
+            let form = layui.form,
+                $ = layui.$;
+
+            // 变换国内航线和国际航线时执行此函数
+            form.on('select(test)', function (data) {
+                data.value === '国内航线' ? selectInland() : selectOutland();
+                form.render();
+            });
+
+            // form.on('select(baggageType)', function(data) {
+            //     data.value === '普通行李' ? selectNormalBaggage() : selectSpecialBaggage();
+
+            //     form.render();
+            // }); 
+
+            form.verify({
+                positive: function (value, item) { //value：表单的值、item：表单的DOM对象
+                    if (parseFloat(value) < 0) {
+                        return '请输入一个不小于0的整数或浮点数';
+                    }
+                }
+            });
+
+            // 动态添加行李信息
+            document.getElementById('addBtn').addEventListener('click', function (ev) {
+                let count = document.getElementById('baggageSum').value;
+                let newRow = '<tr>' + $('#baggageRow').html() + '</tr>';
+                newRow = newRow.replace(/00/g, ++count);
+                newRow = newRow.replace(/value="0"/g, 'value=""');
+                $("#baggageTable tr:last").after(newRow);
+                $("#baggageSum").val(count);
+                // 更新表单渲染
+                form.render();
+            });
+
+            // 获取表单数据，进行计算
+            form.on('submit(calculate)', function (data) {
+                let count = document.getElementById('baggageSum').value;
+                if (parseInt(count) === 0) {
+                    layer.msg("请填写至少一件行李的信息");
+                }
+                else {
+                    try {
+                        result = calculateBaggagePrice(JSON.stringify(data.field));
+                        console.log(result);
+                        layer.alert('收费价格为：' + result.price + '元\n' + result.message);
+                    }
+                    catch {
+                        layer.alert('诶呀程序出错了，请联系开发人员(~_~)');
+                    }
+                }
+                return false;
+            });
+        });
+    </script>
+
+</body>
+
+</html>

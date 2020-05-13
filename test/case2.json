@@ -1,0 +1,594 @@
+[
+    {
+        "testCase": 1,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "10", "width1": "20", "height1": "20", "weight1": "1", "price": 0
+    },
+    {
+        "testCase": 2,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "悦享经济舱、超级经济舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "60", "weight1": "33", "price": 1400
+    },
+    {
+        "testCase": 3,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "55", "width1": "40", "height1": "20", "weight1": "8", "price": 0
+    },
+    {
+        "testCase": 4,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "55", "width1": "40", "height1": "20", "weight1": "10", "price": 0
+    },
+    {
+        "testCase": 5,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "55", "width1": "40", "height1": "20", "weight1": "5", "price": 0
+    },
+    {
+        "testCase": 6,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "经济舱（区域B）", "peopleType": "婴儿", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "55", "width1": "40", "height1": "20", "weight1": "8", "price": 0
+    },
+    {
+        "testCase": 7,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "2", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "32", 
+        "baggageType2": "普通行李", "length2": "55", "width2": "40", "height2": "20", "weight2": "8", "price": 980
+    },
+    {
+        "testCase": 8,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "2", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "32", 
+        "baggageType2": "婴儿车或摇篮", "length2": "0", "width2": "0", "height2": "0", "weight2": "5", "price": 980
+    },
+    {
+        "testCase": 9,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "2", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "20", "height1": "20", "weight1": "23", 
+        "baggageType2": "婴儿车或摇篮", "length2": "0", "width2": "0", "height2": "0", "weight2": "5", "price": 1400
+    },
+    {
+        "testCase": 10,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "20", "height1": "20", "weight1": "28", "price": 380
+    },
+    {
+        "testCase": 11,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "20", "height1": "20", "weight1": "32", "price": 980
+    },
+    {
+        "testCase": 12,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "23", "price": 980
+    },
+    {
+        "testCase": 13,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "32", "price": 1400
+    },
+    {
+        "testCase": 14,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "2", "isDisability": "是",
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "32", 
+        "baggageType2": "普通行李", "length2": "100", "width2": "20", "height2": "20", "weight2": "23", "price": 2800
+    },
+    {
+        "testCase": 15,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "3", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "32", 
+        "baggageType2": "普通行李", "length2": "100", "width2": "20", "height2": "20", "weight2": "23",
+        "baggageType3": "普通行李", "length3": "100", "width3": "20", "height3": "20", "weight3": "23", "price": 4800
+    },
+    {
+        "testCase": 16,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "4", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "32", 
+        "baggageType2": "普通行李", "length2": "100", "width2": "20", "height2": "20", "weight2": "23",
+        "baggageType3": "普通行李", "length3": "100", "width3": "20", "height3": "20", "weight3": "23", 
+        "baggageType4": "普通行李", "length4": "100", "width4": "20", "height4": "20", "weight4": "23", "price": 7800
+    },
+    {
+        "testCase": 17,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "5", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "32", 
+        "baggageType2": "普通行李", "length2": "100", "width2": "20", "height2": "20", "weight2": "23",
+        "baggageType3": "普通行李", "length3": "100", "width3": "20", "height3": "20", "weight3": "23",
+        "baggageType4": "普通行李", "length4": "100", "width4": "20", "height4": "20", "weight4": "23",
+        "baggageType5": "普通行李", "length5": "100", "width5": "20", "height5": "20", "weight5": "23", "price": 10800
+    },
+    {
+        "testCase": 18,
+        "flightType": "国际、地区航线", "flightArea": "2", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "20", "height1": "20", "weight1": "28", "price": 280
+    },
+    {
+        "testCase": 19,
+        "flightType": "国际、地区航线", "flightArea": "2", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "20", "height1": "20", "weight1": "32", "price": 690
+    },
+    {
+        "testCase": 20,
+        "flightType": "国际、地区航线", "flightArea": "2", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "23", "price": 690
+    },
+    {
+        "testCase": 21,
+        "flightType": "国际、地区航线", "flightArea": "2", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "32", "price": 1100
+    },
+    {
+        "testCase": 22,
+        "flightType": "国际、地区航线", "flightArea": "2", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "2", "isDisability": "是",
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "32", 
+        "baggageType2": "普通行李", "length2": "100", "width2": "20", "height2": "20", "weight2": "23", "price": 2200
+    },
+    {
+        "testCase": 23,
+        "flightType": "国际、地区航线", "flightArea": "2", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "3", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "32", 
+        "baggageType2": "普通行李", "length2": "100", "width2": "20", "height2": "20", "weight2": "23",
+        "baggageType3": "普通行李", "length3": "100", "width3": "20", "height3": "20", "weight3": "23", "price": 3300
+    },
+    {
+        "testCase": 24,
+        "flightType": "国际、地区航线", "flightArea": "2", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "4", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "32", 
+        "baggageType2": "普通行李", "length2": "100", "width2": "20", "height2": "20", "weight2": "23",
+        "baggageType3": "普通行李", "length3": "100", "width3": "20", "height3": "20", "weight3": "23", 
+        "baggageType4": "普通行李", "length4": "100", "width4": "20", "height4": "20", "weight4": "23", "price": 4890
+    },
+    {
+        "testCase": 25,
+        "flightType": "国际、地区航线", "flightArea": "2", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "5", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "32", 
+        "baggageType2": "普通行李", "length2": "100", "width2": "20", "height2": "20", "weight2": "23",
+        "baggageType3": "普通行李", "length3": "100", "width3": "20", "height3": "20", "weight3": "23",
+        "baggageType4": "普通行李", "length4": "100", "width4": "20", "height4": "20", "weight4": "23",
+        "baggageType5": "普通行李", "length5": "100", "width5": "20", "height5": "20", "weight5": "23", "price": 6480
+    },
+    {
+        "testCase": 26,
+        "flightType": "国际、地区航线", "flightArea": "3", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "20", "height1": "20", "weight1": "28", "price": 520
+    },
+    {
+        "testCase": 27,
+        "flightType": "国际、地区航线", "flightArea": "3", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "20", "height1": "20", "weight1": "32", "price": 520
+    },
+    {
+        "testCase": 28,
+        "flightType": "国际、地区航线", "flightArea": "3", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "23", "price": 520
+    },
+    {
+        "testCase": 29,
+        "flightType": "国际、地区航线", "flightArea": "3", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "32", "price": 520
+    },
+    {
+        "testCase": 30,
+        "flightType": "国际、地区航线", "flightArea": "3", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "2", "isDisability": "是",
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "32", 
+        "baggageType2": "普通行李", "length2": "100", "width2": "20", "height2": "20", "weight2": "23", "price": 1690
+    },
+    {
+        "testCase": 31,
+        "flightType": "国际、地区航线", "flightArea": "3", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "3", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "32", 
+        "baggageType2": "普通行李", "length2": "100", "width2": "20", "height2": "20", "weight2": "23",
+        "baggageType3": "普通行李", "length3": "100", "width3": "20", "height3": "20", "weight3": "23", "price": 2860
+    },
+    {
+        "testCase": 32,
+        "flightType": "国际、地区航线", "flightArea": "3", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "4", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "32", 
+        "baggageType2": "普通行李", "length2": "100", "width2": "20", "height2": "20", "weight2": "23",
+        "baggageType3": "普通行李", "length3": "100", "width3": "20", "height3": "20", "weight3": "23", 
+        "baggageType4": "普通行李", "length4": "100", "width4": "20", "height4": "20", "weight4": "23", "price": 4450
+    },
+    {
+        "testCase": 33,
+        "flightType": "国际、地区航线", "flightArea": "3", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "5", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "32", 
+        "baggageType2": "普通行李", "length2": "100", "width2": "20", "height2": "20", "weight2": "23",
+        "baggageType3": "普通行李", "length3": "100", "width3": "20", "height3": "20", "weight3": "23",
+        "baggageType4": "普通行李", "length4": "100", "width4": "20", "height4": "20", "weight4": "23",
+        "baggageType5": "普通行李", "length5": "100", "width5": "20", "height5": "20", "weight5": "23", "price": 6040
+    },
+    {
+        "testCase": 34,
+        "flightType": "国际、地区航线", "flightArea": "4", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "20", "height1": "20", "weight1": "28", "price": 690
+    },
+    {
+        "testCase": 35,
+        "flightType": "国际、地区航线", "flightArea": "4", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "20", "height1": "20", "weight1": "32", "price": 1040
+    },
+    {
+        "testCase": 36,
+        "flightType": "国际、地区航线", "flightArea": "4", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "23", "price": 1040
+    },
+    {
+        "testCase": 37,
+        "flightType": "国际、地区航线", "flightArea": "4", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "32", "price": 2050
+    },
+    {
+        "testCase": 38,
+        "flightType": "国际、地区航线", "flightArea": "4", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "2", "isDisability": "是",
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "32", 
+        "baggageType2": "普通行李", "length2": "100", "width2": "20", "height2": "20", "weight2": "23", "price": 3430
+    },
+    {
+        "testCase": 39,
+        "flightType": "国际、地区航线", "flightArea": "4", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "3", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "32", 
+        "baggageType2": "普通行李", "length2": "100", "width2": "20", "height2": "20", "weight2": "23",
+        "baggageType3": "普通行李", "length3": "100", "width3": "20", "height3": "20", "weight3": "23", "price": 4810
+    },
+    {
+        "testCase": 40,
+        "flightType": "国际、地区航线", "flightArea": "4", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "4", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "32", 
+        "baggageType2": "普通行李", "length2": "100", "width2": "20", "height2": "20", "weight2": "23",
+        "baggageType3": "普通行李", "length3": "100", "width3": "20", "height3": "20", "weight3": "23", 
+        "baggageType4": "普通行李", "length4": "100", "width4": "20", "height4": "20", "weight4": "23", "price": 6400
+    },
+    {
+        "testCase": 41,
+        "flightType": "国际、地区航线", "flightArea": "4", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "5", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "32", 
+        "baggageType2": "普通行李", "length2": "100", "width2": "20", "height2": "20", "weight2": "23",
+        "baggageType3": "普通行李", "length3": "100", "width3": "20", "height3": "20", "weight3": "23",
+        "baggageType4": "普通行李", "length4": "100", "width4": "20", "height4": "20", "weight4": "23",
+        "baggageType5": "普通行李", "length5": "100", "width5": "20", "height5": "20", "weight5": "23", "price": 7990
+    },
+    {
+        "testCase": 42,
+        "flightType": "国际、地区航线", "flightArea": "5", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "20", "height1": "20", "weight1": "28", "price": 210
+    },
+    {
+        "testCase": 43,
+        "flightType": "国际、地区航线", "flightArea": "5", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "20", "height1": "20", "weight1": "32", "price": 520
+    },
+    {
+        "testCase": 44,
+        "flightType": "国际、地区航线", "flightArea": "5", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "23", "price": 520
+    },
+    {
+        "testCase": 45,
+        "flightType": "国际、地区航线", "flightArea": "5", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "32", "price": 830
+    },
+    {
+        "testCase": 46,
+        "flightType": "国际、地区航线", "flightArea": "5", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "2", "isDisability": "是",
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "32", 
+        "baggageType2": "普通行李", "length2": "100", "width2": "20", "height2": "20", "weight2": "23", "price": 1660
+    },
+    {
+        "testCase": 47,
+        "flightType": "国际、地区航线", "flightArea": "5", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "3", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "32", 
+        "baggageType2": "普通行李", "length2": "100", "width2": "20", "height2": "20", "weight2": "23",
+        "baggageType3": "普通行李", "length3": "100", "width3": "20", "height3": "20", "weight3": "23", "price": 2760
+    },
+    {
+        "testCase": 48,
+        "flightType": "国际、地区航线", "flightArea": "5", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "4", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "32", 
+        "baggageType2": "普通行李", "length2": "100", "width2": "20", "height2": "20", "weight2": "23",
+        "baggageType3": "普通行李", "length3": "100", "width3": "20", "height3": "20", "weight3": "23", 
+        "baggageType4": "普通行李", "length4": "100", "width4": "20", "height4": "20", "weight4": "23", "price": 4350
+    },
+    {
+        "testCase": 49,
+        "flightType": "国际、地区航线", "flightArea": "5", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "5", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "32", 
+        "baggageType2": "普通行李", "length2": "100", "width2": "20", "height2": "20", "weight2": "23",
+        "baggageType3": "普通行李", "length3": "100", "width3": "20", "height3": "20", "weight3": "23",
+        "baggageType4": "普通行李", "length4": "100", "width4": "20", "height4": "20", "weight4": "23",
+        "baggageType5": "普通行李", "length5": "100", "width5": "20", "height5": "20", "weight5": "23", "price": 5940
+    },
+    {
+        "testCase": 50,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "经济舱（区域B）", "peopleType": "儿童", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "3", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "32", 
+        "baggageType2": "普通行李", "length2": "100", "width2": "60", "height2": "40", "weight2": "32",
+        "baggageType3": "普通行李", "length3": "100", "width3": "60", "height3": "40", "weight3": "32", "price": 5600
+    },
+    {
+        "testCase": 51,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "经济舱（区域A）", "peopleType": "婴儿", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "3", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "60", "height1": "40", "weight1": "32", 
+        "baggageType2": "普通行李", "length2": "100", "width2": "60", "height2": "40", "weight2": "32",
+        "baggageType3": "普通行李", "length3": "100", "width3": "60", "height3": "40", "weight3": "32", "price": 7600
+    },
+    {
+        "testCase": 52,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "2", "isDisability": "是",
+        "baggageType1": "手动轮椅", "length1": "0", "width1": "0", "height1": "0", "weight1": "5", 
+        "baggageType2": "电动轮椅", "length2": "0", "width2": "0", "height2": "0", "weight2": "5", "price": 0
+    },
+    {
+        "testCase": 53,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "2", "isDisability": null,
+        "baggageType1": "手动轮椅", "length1": "0", "width1": "0", "height1": "0", "weight1": "5", 
+        "baggageType2": "电动轮椅", "length2": "0", "width2": "0", "height2": "0", "weight2": "5", "price": 0
+    },
+    {
+        "testCase": 54,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "2", "isDisability": null,
+        "baggageType1": "手动轮椅", "length1": "0", "width1": "0", "height1": "0", "weight1": "23", 
+        "baggageType2": "电动轮椅", "length2": "0", "width2": "0", "height2": "0", "weight2": "23", "price": 1400
+    },
+    {
+        "testCase": 55,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "经济舱（区域A）", "peopleType": "婴儿", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "婴儿车或摇篮", "length1": "0", "width1": "0", "height1": "0", "weight1": "5", "price": 0
+    },
+    {
+        "testCase": 56,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "婴儿车或摇篮", "length1": "0", "width1": "0", "height1": "0", "weight1": "5", "price": 0
+    },
+    {
+        "testCase": 57,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "婴儿车或摇篮", "length1": "0", "width1": "0", "height1": "0", "weight1": "32", "price": 980
+    },
+    {
+        "testCase": 58,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "2", "isDisability": null,
+        "baggageType1": "导盲犬", "length1": "0", "width1": "0", "height1": "0", "weight1": "20", 
+        "baggageType2": "骨灰", "length2": "0", "width2": "0", "height2": "0", "weight2": "10", "price": 0
+    },
+    {
+        "testCase": 59,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "3", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "20", "height1": "20", "weight1": "32", 
+        "baggageType2": "普通行李", "length2": "100", "width2": "20", "height2": "20", "weight2": "32",
+        "baggageType3": "自行车", "length3": "0", "width3": "0", "height3": "0", "weight3": "5", "price": 1400
+    },
+    {
+        "testCase": 60,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "2", "isDisability": null,
+        "baggageType1": "普通行李", "length1": "100", "width1": "20", "height1": "20", "weight1": "32", 
+        "baggageType2": "自行车", "length2": "0", "width2": "0", "height2": "0", "weight2": "5", "price": 0
+    },
+    {
+        "testCase": 61,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "皮划艇", "length1": "0", "width1": "0", "height1": "0", "weight1": "23", "price": 2600
+    },
+    {
+        "testCase": 62,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "皮划艇", "length1": "0", "width1": "0", "height1": "0", "weight1": "32", "price": 3900
+    },
+    {
+        "testCase": 63,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "皮划艇", "length1": "0", "width1": "0", "height1": "0", "weight1": "45", "price": 5200
+    },
+    {
+        "testCase": 64,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "皮划艇", "length1": "0", "width1": "0", "height1": "0", "weight1": "46", "price": 5200
+    },
+    {
+        "testCase": 65,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "皮划艇", "length1": "0", "width1": "0", "height1": "0", "weight1": "1", "price": 0
+    },
+    {
+        "testCase": 66,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "撑杆", "length1": "0", "width1": "0", "height1": "0", "weight1": "23", "price": 1300
+    },
+    {
+        "testCase": 67,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "撑杆", "length1": "0", "width1": "0", "height1": "0", "weight1": "32", "price": 2600
+    },
+    {
+        "testCase": 68,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "撑杆", "length1": "0", "width1": "0", "height1": "0", "weight1": "45", "price": 3900
+    },
+    {
+        "testCase": 69,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "撑杆", "length1": "0", "width1": "0", "height1": "0", "weight1": "46", "price": 3900
+    },
+    {
+        "testCase": 70,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "撑杆", "length1": "0", "width1": "0", "height1": "0", "weight1": "1", "price": 0
+    },
+    {
+        "testCase": 71,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "睡袋", "length1": "0", "width1": "0", "height1": "0", "weight1": "32", "price": 980
+    },
+    {
+        "testCase": 72,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "经济舱（区域A）", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "睡袋", "length1": "0", "width1": "0", "height1": "0", "weight1": "23", "price": 0
+    },
+    {
+        "testCase": 73,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "小型电器或仪器", "length1": "0", "width1": "0", "height1": "0", "weight1": "23", "price": 490
+    },
+    {
+        "testCase": 74,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "小型电器或仪器", "length1": "0", "width1": "0", "height1": "0", "weight1": "32", "price": 3900
+    },
+    {
+        "testCase": 75,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "小型电器或仪器", "length1": "0", "width1": "0", "height1": "0", "weight1": "33", "price": 3900
+    },
+    {
+        "testCase": 76,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "小型电器或仪器", "length1": "0", "width1": "0", "height1": "0", "weight1": "1", "price": 0
+    },
+    {
+        "testCase": 77,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "可作为行李运输的枪支", "length1": "0", "width1": "0", "height1": "0", "weight1": "23", "price": 1300
+    },
+    {
+        "testCase": 78,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "可作为行李运输的枪支", "length1": "0", "width1": "0", "height1": "0", "weight1": "32", "price": 2600
+    },
+    {
+        "testCase": 79,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "可作为行李运输的枪支", "length1": "0", "width1": "0", "height1": "0", "weight1": "33", "price": 2600
+    },
+    {
+        "testCase": 80,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "可作为行李运输的枪支", "length1": "0", "width1": "0", "height1": "0", "weight1": "1", "price": 0
+    },
+    {
+        "testCase": 81,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "可作为行李运输的弹药", "length1": "0", "width1": "0", "height1": "0", "weight1": "5", "price": 1300
+    },
+    {
+        "testCase": 82,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "可作为行李运输的弹药", "length1": "0", "width1": "0", "height1": "0", "weight1": "6", "price": 1300
+    },
+    {
+        "testCase": 83,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "可作为行李运输的弹药", "length1": "0", "width1": "0", "height1": "0", "weight1": "1", "price": 0
+    },
+    {
+        "testCase": 84,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "小动物", "length1": "0", "width1": "0", "height1": "0", "weight1": "8", "price": 3900
+    },
+    {
+        "testCase": 85,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "小动物", "length1": "0", "width1": "0", "height1": "0", "weight1": "23", "price": 5200
+    },
+    {
+        "testCase": 86,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "小动物", "length1": "0", "width1": "0", "height1": "0", "weight1": "32", "price": 7800
+    },
+    {
+        "testCase": 87,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "小动物", "length1": "0", "width1": "0", "height1": "0", "weight1": "33", "price": 7800
+    },
+    {
+        "testCase": 88,
+        "flightType": "国际、地区航线", "flightArea": "1", "seatType": "头等、公务舱", "peopleType": "成人", "vipType": "无", "ticketPrice": "1000",
+        "baggageSum": "1", "isDisability": null,
+        "baggageType1": "小动物", "length1": "0", "width1": "0", "height1": "0", "weight1": "1", "price": 0
+    }
+]

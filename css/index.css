@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    height: 100vh;
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+#ticketDetail,
+#baggageDetail,
+#header,
+#footer {
+    border: 1px solid rgb(240, 240, 240);
+    margin: 20px 20px 0 20px;
+    padding: 10px;
+}
+
+#header {
+    order: 0;
+    width: 74%;
+    height: 5vh;
+    text-align: center;
+    font-size: 2em;
+    line-height: 5vh;
+}
+
+#ticketDetail {
+    order: 1;
+    width: 30%;
+    height: 45vh;
+    overflow: auto;
+}
+
+#baggageDetail {
+    order: 2;
+    width: 40%;
+    height: 45vh;
+    overflow: auto;
+}
+
+#footer {
+    order: 3;
+    width: 74%;
+    height: 28vh;
+    overflow: auto;
+}
+
+span {
+    background-color: rgb(240, 240, 240);
+    margin: 5px;
+    padding: 2px;
+}
+
+#calculateBtn {
+    margin-left: 25%;
+}
+
+#isDisability {
+    margin-left: 10%;
+}
+
+#isDisability i {
+    margin-top: 4.5px;
+    margin-left: 4.5px;
+}
+
+#isDisability > div {
+    margin-top: 6px
+}
