@@ -6,13 +6,13 @@
 
 ## 运行
 
-···bash
+```bash
 npm i webpack webpack-cli forever -g
 npm install
 npm run test
 webpack
 forever start server.js
-···
+```
 
 ## 支持
 
