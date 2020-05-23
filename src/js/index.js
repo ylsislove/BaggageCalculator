@@ -1,9 +1,7 @@
 
 import "layui-src/dist/css/layui.css";
 import "../css/index.css";
-
-import "./calculate.js";
-
+import calculateBaggagePrice from './calculate'
 import "layui-src";
 layui.config({
   dir: '../node_modules/layui-src/dist/'
@@ -53,12 +51,13 @@ layui.use(['form'], function () {
         }
         else {
             try {
-                result = calculateBaggagePrice(JSON.stringify(data.field));
+                let result = calculateBaggagePrice(JSON.stringify(data.field));
                 console.log(result);
                 layer.alert('收费价格为：' + result.price + '元\n' + result.message);
             }
-            catch {
-                layer.alert('诶呀程序出错了，请联系开发人员(~_~)');
+            catch (error) {
+                console.log(error.message);
+                layer.alert('诶呀程序出错了，请联系开发人员(~_~)\n' + error.message);
             }
         }
         return false;
