@@ -16,4 +16,4 @@ const app = express();
 // maxAge 资源缓存的最大时间，单位ms
 app.use(express.static('.', { maxAge: 1000 * 3600 }));
 
-app.listen(3000);
+app.listen(80);
