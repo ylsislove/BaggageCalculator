@@ -1,10 +1,14 @@
 # BaggageCalculator
 国航行李计算器，软测实习题目。jenkins + webpack + jest搭建
 
+## 在线访问
+[国航行李计算器](http://121.36.109.220/build/index.html)
+
 ## 界面截图
 
 ![img1](img1.png)
-![img2](img1.png)
+
+![img2](img2.png)
 
 ## 运行
 
