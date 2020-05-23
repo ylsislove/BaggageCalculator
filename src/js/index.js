@@ -1,22 +1,18 @@
 
-import "../layui/css/layui.css";
+import "layui-src/dist/css/layui.css";
 import "../css/index.css";
 
-import "../layui/layui.js"
-import "./calculate.js"
+import "./calculate.js";
+
+import "layui-src";
+layui.config({
+  dir: '../node_modules/layui-src/dist/'
+})
+
 
 // 页面加载完毕后执行此函数
 window.onload = function () {
     selectInland();
-}
-
-// 动态删除行李信息
-function baggageRemove(obj) {
-    // 获得删除行的索引
-    let rowIndex = obj.parentNode.parentNode.rowIndex;
-    document.getElementById('baggageTable').deleteRow(rowIndex);
-    let count = document.getElementById('baggageSum').value;
-    document.getElementById('baggageSum').value = --count;
 }
 
 layui.use(['form'], function () {
@@ -28,12 +24,6 @@ layui.use(['form'], function () {
         data.value === '国内航线' ? selectInland() : selectOutland();
         form.render();
     });
-
-    // form.on('select(baggageType)', function(data) {
-    //     data.value === '普通行李' ? selectNormalBaggage() : selectSpecialBaggage();
-
-    //     form.render();
-    // }); 
 
     form.verify({
         positive: function (value, item) { //value：表单的值、item：表单的DOM对象

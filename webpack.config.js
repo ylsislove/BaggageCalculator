@@ -57,21 +57,6 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
-        // options: {
-        //   presets: [
-        //     [
-        //       '@babel/preset-env',
-        //       {
-        //         useBuiltIns: 'usage',
-        //         corejs: {version: 3},
-        //         targets: {
-        //           chrome: '60',
-        //           firefox: '50'
-        //         }
-        //       }
-        //     ]
-        //   ]
-        // }
       },
       {
         test: /\.(jpg|png|gif)/,
@@ -88,7 +73,22 @@ module.exports = {
         loader: 'html-loader'
       },
       {
-        exclude: /\.(js|css|less|html|jpg|png|gif)/,
+        test: /\.(otf|eot|svg|ttf|woff|woff2)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              name: '[name].[ext]',// 打包后的文件名称
+              outputPath: '', // 默认是dist目录
+              publicPath: '../font/', // 图片的url前面追加'../font'
+              useRelativePath: true, // 使用相对路径
+              limit: 50000 // 表示小于1K的图片会被转化成base64格式
+            }
+          }
+        ]
+      },
+      {
+        exclude: /\.(js|css|less|html|jpg|png|gif|otf|eot|svg|ttf|woff|woff2)/,
         loader: 'file-loader',
         options: {
           outputPath: 'media'
