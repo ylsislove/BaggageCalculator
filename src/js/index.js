@@ -1,4 +1,80 @@
 
+import "../layui/css/layui.css";
+import "../css/index.css";
+
+import "../layui/layui.js"
+import "./calculate.js"
+
+// 页面加载完毕后执行此函数
+window.onload = function () {
+    selectInland();
+}
+
+// 动态删除行李信息
+function baggageRemove(obj) {
+    // 获得删除行的索引
+    let rowIndex = obj.parentNode.parentNode.rowIndex;
+    document.getElementById('baggageTable').deleteRow(rowIndex);
+    let count = document.getElementById('baggageSum').value;
+    document.getElementById('baggageSum').value = --count;
+}
+
+layui.use(['form'], function () {
+    let form = layui.form,
+        $ = layui.$;
+
+    // 变换国内航线和国际航线时执行此函数
+    form.on('select(test)', function (data) {
+        data.value === '国内航线' ? selectInland() : selectOutland();
+        form.render();
+    });
+
+    // form.on('select(baggageType)', function(data) {
+    //     data.value === '普通行李' ? selectNormalBaggage() : selectSpecialBaggage();
+
+    //     form.render();
+    // }); 
+
+    form.verify({
+        positive: function (value, item) { //value：表单的值、item：表单的DOM对象
+            if (parseFloat(value) < 0) {
+                return '请输入一个不小于0的整数或浮点数';
+            }
+        }
+    });
+
+    // 动态添加行李信息
+    document.getElementById('addBtn').addEventListener('click', function (ev) {
+        let count = document.getElementById('baggageSum').value;
+        let newRow = '<tr>' + $('#baggageRow').html() + '</tr>';
+        newRow = newRow.replace(/00/g, ++count);
+        newRow = newRow.replace(/value="0"/g, 'value=""');
+        $("#baggageTable tr:last").after(newRow);
+        $("#baggageSum").val(count);
+        // 更新表单渲染
+        form.render();
+    });
+
+    // 获取表单数据，进行计算
+    form.on('submit(calculate)', function (data) {
+        let count = document.getElementById('baggageSum').value;
+        if (parseInt(count) === 0) {
+            layer.msg("请填写至少一件行李的信息");
+        }
+        else {
+            try {
+                result = calculateBaggagePrice(JSON.stringify(data.field));
+                console.log(result);
+                layer.alert('收费价格为：' + result.price + '元\n' + result.message);
+            }
+            catch {
+                layer.alert('诶呀程序出错了，请联系开发人员(~_~)');
+            }
+        }
+        return false;
+    });
+});
+
 // 设置对应航线区域的机舱类型是否可选
 function setSeatType(area, value) {
     let child = document.getElementById(area).childNodes;
