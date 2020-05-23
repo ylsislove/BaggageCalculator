@@ -1,4 +1,5 @@
-const calculateBaggagePrice = require('../js/calculate');
+// const calculateBaggagePrice = require('../js/calculate');
+import calculateBaggagePrice from '../src/js/calculate'
 const fs = require('fs');
 const path = require('path');
 const testCases1 = JSON.parse(fs.readFileSync(path.join(__dirname, 'case1.json')));

@@ -455,4 +455,5 @@ function calculateBaggagePrice(data) {
 }
 
 // 注意，执行单元测试的时候，下面的注释需要放开。不执行单元测试时，将下面的语句注释
-module.exports = calculateBaggagePrice;
+// module.exports = calculateBaggagePrice;
+export default calculateBaggagePrice;
