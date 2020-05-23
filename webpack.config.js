@@ -37,22 +37,6 @@ module.exports = {
         test: /\.less$/,
         use: [...commonCssLoader, 'less-loader']
       },
-      /*
-        正常来讲，一个文件只能被一个loader处理。
-        当一个文件要被多个loader处理，那么一定要指定loader执行的先后顺序：
-          先执行eslint 在执行babel
-      */
-      // {
-      //   // 在package.json中eslintConfig --> airbnb
-      //   test: /\.js$/,
-      //   exclude: /node_modules/,
-      //   // 优先执行
-      //   enforce: 'pre',
-      //   loader: 'eslint-loader',
-      //   options: {
-      //     fix: true
-      //   }
-      // },
       {
         test: /\.js$/,
         exclude: /node_modules/,
@@ -102,16 +86,16 @@ module.exports = {
     }),
     new OptimizeCssAssetsWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: './src/index.html'
-      // minify: {
-      //   collapseWhitespace: true,
-      //   removeComments: true
-      // }
+      template: './src/index.html',
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true
+      }
     })
   ],
   mode: 'development',
   devServer: {
-    contentBase: resolve(__dirname, 'build'),
+    contentBase: resolve(__dirname),
     compress: true,
     port: 3000,
     open: true,
