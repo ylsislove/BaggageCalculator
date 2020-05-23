@@ -22,7 +22,7 @@ const commonCssLoader = [
 ];
 
 module.exports = {
-  entry: './src/js/index.js',
+  entry: ['./src/js/index.js', './src/index.html'],
   output: {
     filename: 'js/built.js',
     path: resolve(__dirname, 'build')
@@ -109,5 +109,15 @@ module.exports = {
       // }
     })
   ],
-  mode: 'development'
+  mode: 'development',
+  devServer: {
+    contentBase: resolve(__dirname, 'build'),
+    compress: true,
+    port: 3000,
+    open: true,
+    // 开启HMR功能
+    // 当修改了webpack配置，新配置要想生效，必须重新webpack服务
+    hot: true
+  },
+  devtool: 'eval-source-map'
 };
