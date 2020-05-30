@@ -5,9 +5,9 @@
 [国航行李计算器](http://121.36.109.220/build/index.html)
 
 ## 界面截图
-![img1](img1.png)
+![img1](https://cdn.jsdelivr.net/gh/ylsislove/BaggageCalculator/img1.png)
 
-![img2](img2.png)
+![img2](https://cdn.jsdelivr.net/gh/ylsislove/BaggageCalculator/img2.png)
 
 ## 运行
 ```bash
@@ -19,5 +19,5 @@ forever start server.js
 ```
 
 ## 支持
-![赞赏码](reward.png)
+![赞赏码](https://cdn.jsdelivr.net/gh/ylsislove/BaggageCalculator/reward.png)
 
